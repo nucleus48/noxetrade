@@ -1,0 +1,106 @@
+:root {
+  --border: hsl(228, 9%, 89%);
+  --grey: hsl(228, 9%, 38%);
+  --placeholder: hsl(228, 9%, 65%);
+  --blue: hsl(210, 60%, 50%);
+  --white: hsl(0, 0%, 98%);
+  --black: hsl(210, 60%, 10%);
+  --dark-blue: hsl(210, 60%, 20%);
+  --orange: hsl(30, 90%, 60%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100dvh;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: var(--black);
+  background: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--blue);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 1.5em;
+  padding: 1em;
+  border: 0;
+  color: var(--white);
+  outline: 0;
+}
+
+input {
+  border: 1px solid var(--border);
+  border-radius: 0.3em;
+  padding: 0.8em 1em;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: var(--black);
+  outline: 0;
+  background: transparent;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: var(--placeholder);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@keyframes fase-in {
+  0% {
+    transform: translate(-100%, 10rem);
+  }
+  100% {
+    transform: translate(0%, 0rem);
+  }
+}
+
+.ani-scroll {
+  animation: fase-in 1s linear;
+}

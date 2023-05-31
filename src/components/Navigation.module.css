@@ -1,0 +1,68 @@
+.navigation {
+  position: fixed;
+  height: 100dvh;
+  inset: 0;
+  transition: visibility 100ms ease-in;
+  visibility: hidden;
+}
+
+.navigation nav {
+  z-index: 8888;
+  background: var(--white);
+  transition: left 100ms ease-in;
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100dvh;
+  padding: 5rem 1rem;
+}
+
+.navigation > :last-child {
+  z-index: 7777;
+  transition: 100ms ease-in;
+  background: hsla(0, 0%, 0%, 50%);
+  width: 100dvw;
+  height: 100dvh;
+  visibility: visible;
+  opacity: 1;
+}
+
+.navigation .dim {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navigation .open {
+  left: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navigation button {
+  width: 100%;
+}
+
+.market {
+  font-size: 1rem;
+  font-weight: 400;
+  transition: height 1s linear;
+  overflow: hidden;
+  height: 0;
+}
+
+.expand {
+  height: 1rem;
+}

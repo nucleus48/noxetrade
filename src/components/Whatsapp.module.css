@@ -1,0 +1,16 @@
+@keyframes bounce {
+  50% {
+    bottom: 1.5rem;
+  }
+  100% {
+    bottom: 0.5rem;
+  }
+}
+
+.whatsapp {
+  position: fixed;
+  left: 1rem;
+  bottom: 0.5rem;
+  font-size: 3rem;
+  animation: bounce 2s ease-in-out infinite;
+}

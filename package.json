@@ -1,0 +1,30 @@
+{
+  "name": "noxetrade",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^9.22.1",
+    "preact": "^10.15.0",
+    "react-router-dom": "^6.11.2",
+    "react-ts-tradingview-widget": "^1.2.16"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-eruda": "^1.0.1",
+    "vite-plugin-svgr": "^3.2.0"
+  },
+  "prettier": {
+    "semi": false,
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
+}

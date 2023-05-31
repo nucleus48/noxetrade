@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding-block: 1rem;
+  font-weight: 500;
+}
+
+.header > * {
+  min-height: 1.2rem;
+  min-width: 1.2rem;
+  display: grid;
+  place-items: center;
+}
+
+.header > :first-child {
+  z-index: 9999;
+  transition: 100ms linear;
+}
+
+.menu-open {
+  transform: rotate(90deg);
+}

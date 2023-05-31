@@ -1,0 +1,29 @@
+.container {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-el {
+  text-align: center;
+  box-shadow: 0 0 5px 2px var(--border);
+  border-radius: 0.3rem;
+  padding: 2rem 1rem;
+}
+
+.form-el a {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.error {
+  border-color: red;
+}
+
+.error + p {
+  text-align: left;
+  color: red;
+  margin-top: .5em;
+}

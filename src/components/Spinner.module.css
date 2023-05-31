@@ -1,0 +1,17 @@
+.spinner {
+  position: fixed;
+  inset: 0;
+  height: 100dvh;
+  background: hsla(0, 0%, 98%, 50%);
+  display: grid;
+  place-items: center;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg);}
+}
+
+.spinner svg {
+  animation: spin 1s infinite linear;
+  font-size: 3rem;
+}
